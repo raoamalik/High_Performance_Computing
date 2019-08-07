@@ -8,22 +8,40 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/depend
+~MSle0~/Value
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-:Q
 :wq
+:q!
+:85
+:Q
+:25
+:Wq
+:72
+:42
 :W
 :qwq!
 :w
-:q!
 :'<,'>q
 
 # Search String History (newest to oldest):
+?/Value
+?/shfl
+?/asdfs
+?/jgkjh
+?/vol
+?/oldres
+?/result
+?/print
+?/asdf
+?/main
+?/asdfsd
+?/neig
+?/forces
 ?/depend
 ?/startloop
 ?/avx512f
@@ -32,277 +50,267 @@ $
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@ :q
 
 # Input Line History (newest to oldest):
 
 # Registers:
+"0	LINE	0
+	#pragma omp single
 ""1	LINE	0
-	#pragma omp parallel for 
+	  int MPI_Bcast (, int count, MPI_Datatype datatype, int root,  MPI_Comm comm)
 "2	LINE	0
-	d}
+	  long N = 100000000;
 "3	LINE	0
-	#pragma omp parallel
-	
+	  long sum = 0;
 "4	LINE	0
-	  if (id == nthreads-1) iend = N;
+	    MPI_Status status;
 "5	LINE	0
-	  iend = (id+1) * Nthr;
+	}d
 "6	LINE	0
-	  istart = id * Nthr;
+	    const int value = 99;
 "7	LINE	0
-	  Nthr = N / nthreads;
-"8	LINE	0
 	
+"8	LINE	0
+	    const int value = 99;
 "9	LINE	0
-	  nthreads = omp_get_num_threads();
+	     int MPI_Send(const void *buf, int 1, MPI_Datatype int, int 1, int 999,  MPI_Comm comm);
 "-	CHAR	0
 	-
 
 # File marks:
-'0  59  0  ~/OpenMP/example2/example2.cpp
-'1  26  0  ~/OpenMP/example2/example2.cpp
-'2  50  0  ~/OpenMP/example2/example2.cpp
-'3  46  23  ~/OpenMP/example2/example2.cpp
-'4  2  0  ~/OpenMP/example2/output
-'5  1  0  ~/OpenMP/example2/run.sh
-'6  37  10  ~/OpenMP/example2/example2.cpp
-'7  40  1  ~/OpenMP/example2/example2.cpp
-'8  41  0  ~/OpenMP/example2/example2.cpp
-'9  34  10  ~/OpenMP/example2/example2.cpp
+'0  6  1  ~/Summer-School-Materials/OpenMPOffload/Makefile
+'1  1  0  ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+'2  108  6  ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+'3  74  12  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+'4  100  4  ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+'5  4  0  ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/CompileAll.sh
+'6  85  30  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+'7  260  0  ~/Wednesday-morning/TutorialsCUDA/program_iiia.cu
+'8  286  0  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+'9  1  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iiia.cu
 
 # Jumplist (newest first):
--'  59  0  ~/OpenMP/example2/example2.cpp
--'  26  0  ~/OpenMP/example2/example2.cpp
--'  50  2  ~/OpenMP/example2/example2.cpp
--'  46  0  ~/OpenMP/example2/example2.cpp
--'  37  2  ~/OpenMP/example2/example2.cpp
--'  2  0  ~/OpenMP/example2/output
--'  1  0  ~/OpenMP/example2/run.sh
--'  40  1  ~/OpenMP/example2/example2.cpp
--'  41  0  ~/OpenMP/example2/example2.cpp
--'  34  1  ~/OpenMP/example2/example2.cpp
--'  58  2  ~/OpenMP/example2/example2.cpp
--'  1  0  ~/OpenMP/example2/example2
--'  24  3  ~/OpenMP/example2/example2.cpp
--'  57  2  ~/OpenMP/example2/example2.cpp
--'  1  0  ~/OpenMP/example2/output
--'  4  0  ~/OpenMP/example2/example2.cpp
--'  1  0  ~/OpenMP/example2/example2.cpp
--'  4  0  ~/OpenMP/example1/Makefile
--'  2  0  ~/OpenMP/example1/Makefile
--'  22  0  ~/OpenMP/example1/example1.cpp
--'  8  0  ~/OpenMP/example1/example1.cpp
--'  1  0  ~/OpenMP/example1/example1
--'  1  0  ~/OpenMP/example1/Makefile
--'  11  2  ~/OpenMP/example1/example1.cpp
--'  1  0  ~/OpenMP/example1/output
--'  1  0  ~/OpenMP/example1/sbatch.out
--'  12  21  ~/OpenMP/example1/run.sh
--'  24  0  ~/OpenMP/example1/example1.cpp
--'  2  0  ~/OpenMP/example1/sbatch.out
--'  12  0  ~/OpenMP/example1/example1.cpp
--'  1  0  ~/OpenMP/example1/example1.cpp
--'  1  0  ~/OpenMP/example1/run.sh
--'  1  0  ~/Summer-School-Materials/Examples/vmc/vec/ipo_out.optrpt
--'  10  0  ~/Summer-School-Materials/Examples/vmc/vec/vmc.cc
--'  176  0  ~/Summer-School-Materials/Examples/vmc/vec/vmc.cc
--'  1  0  ~/Summer-School-Materials/Examples/vmc/vec/vmc.cc
--'  16  3  ~/Summer-School-Materials/Examples/Vectorization/mc/ipo_out.optrpt
--'  7  0  ~/Summer-School-Materials/Examples/Vectorization/mc/mc2.optrpt
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/mc/mc2.optrpt
--'  19  1  ~/Summer-School-Materials/Examples/Vectorization/mc/Makefile
--'  56  0  ~/Summer-School-Materials/Examples/Vectorization/mc/exptest.cc
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/mc/exptest.cc
--'  72  0  ~/Summer-School-Materials/Examples/Vectorization/mc/README.md
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/mc/README.md
--'  57  0  ~/Summer-School-Materials/Examples/Vectorization/mc/mc2.cc
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/mc/mc2.cc
--'  6  0  ~/Summer-School-Materials/Examples/Vectorization/mc/Makefile
--'  14  0  ~/Summer-School-Materials/Examples/Vectorization/mc/ipo_out.optrpt
--'  66  0  ~/Summer-School-Materials/Examples/Vectorization/mc/ipo_out.optrpt
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/mc/ipo_out.optrpt
--'  12  0  ~/Summer-School-Materials/Examples/Vectorization/mc/Makefile
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/mc/mc1.optrpt
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/mc/mc0.optrpt
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/mc/mc1.cc
--'  66  0  ~/Summer-School-Materials/Examples/Vectorization/mc/mc1.cc
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/mc/Makefile
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/mc/mc0.cc
--'  58  0  ~/Summer-School-Materials/Examples/Vectorization/mc/mc0.cc
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/mc/mc0
--'  55  0  ~/Summer-School-Materials/Examples/Vectorization/bench/stride.cc
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/bench/stride.cc
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/bench/stride.c
--'  62  3  ~/Summer-School-Materials/Examples/Vectorization/bench/bench.cc
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/bench/bench.cc
--'  1195875  3  ~/Summer-School-Materials/Examples/Vectorization/sum.s
--'  1195798  10  ~/Summer-School-Materials/Examples/Vectorization/sum.s
--'  1195996  0  ~/Summer-School-Materials/Examples/Vectorization/sum.s
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/sum.optrpt
--'  50  0  ~/Summer-School-Materials/Examples/Vectorization/sum.optrpt
--'  101  0  ~/Summer-School-Materials/Examples/Vectorization/sum.s
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/sum.s
--'  492  0  ~/Summer-School-Materials/Examples/Vectorization/sum.s
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/sum.cc
--'  10  0  ~/Summer-School-Materials/Examples/Vectorization/Makefile
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/sum_timed.cc
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/Makefile
--'  1  0  ~/Summer-School-Materials/Examples/Vectorization/mxm
--'  36  0  ~/Summer-School-Materials/README.md
--'  580  0  ~/Summer-School-Materials/VectorSIMD/README.md
--'  1  0  ~/Summer-School-Materials/VectorSIMD/README.md
--'  17  0  ~/Summer-School-Materials/README.md
--'  774  604  /proc/cpuinfo
--'  748  604  /proc/cpuinfo
--'  722  604  /proc/cpuinfo
--'  696  604  /proc/cpuinfo
--'  670  604  /proc/cpuinfo
--'  644  604  /proc/cpuinfo
--'  618  604  /proc/cpuinfo
--'  592  604  /proc/cpuinfo
--'  566  604  /proc/cpuinfo
--'  540  604  /proc/cpuinfo
--'  514  604  /proc/cpuinfo
--'  488  604  /proc/cpuinfo
--'  462  604  /proc/cpuinfo
--'  436  604  /proc/cpuinfo
--'  410  604  /proc/cpuinfo
--'  384  604  /proc/cpuinfo
+-'  6  1  ~/Summer-School-Materials/OpenMPOffload/Makefile
+-'  1  0  ~/Summer-School-Materials/OpenMPOffload/Makefile
+-'  1  0  ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  70  6  ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  108  6  ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  100  4  ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  74  12  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  100  12  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  85  2  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  4  0  ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/CompileAll.sh
+-'  1  0  ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/CompileAll.sh
+-'  98  0  ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  87  32  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  95  43  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  94  43  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  93  43  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  92  43  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  91  25  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  90  32  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  89  32  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  88  32  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  286  0  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  260  0  ~/Wednesday-morning/TutorialsCUDA/program_iiia.cu
+-'  1  0  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  1  0  ~/Wednesday-morning/TutorialsCUDA/program_iiia.cu
+-'  1  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iiia.cu
+-'  260  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iiia.cu
+-'  89  12  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iie.cu
+-'  88  13  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iie.cu
+-'  91  13  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iie.cu
+-'  90  13  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iie.cu
+-'  70  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iie.cu
+-'  1  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iie.cu
+-'  336  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iid.cu
+-'  1  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iid.cu
+-'  315  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iic.cu
+-'  1  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iic.cu
+-'  1  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_id.cu
+-'  27  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_ic.cu
+-'  1  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_ic.cu
+-'  32  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_ia.cu
+-'  1  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_ia.cu
+-'  1  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/program_ia
+-'  8  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/CompileAll.sh
+-'  1  0  ~/CUDA/Wednesday-morning/TutorialsCUDA/CompileAll.sh
+-'  56  28  ~/Summer-School-Materials/MPI/exercises/recursive_par.cc
+-'  54  4  ~/Summer-School-Materials/MPI/exercises/recursive_par.cc
+-'  61  12  ~/Summer-School-Materials/MPI/exercises/recursive_par.cc
+-'  57  2  ~/Summer-School-Materials/MPI/exercises/recursive_par.cc
+-'  50  9  ~/Summer-School-Materials/MPI/exercises/recursive_par.cc
+-'  34  2  ~/Summer-School-Materials/MPI/exercises/recursive_par.cc
+-'  32  30  ~/Summer-School-Materials/MPI/exercises/recursive_par.cc
+-'  60  4  ~/Summer-School-Materials/MPI/exercises/recursive_par.cc
+-'  53  28  ~/Summer-School-Materials/MPI/exercises/recursive_par.cc
+-'  1  0  ~/Summer-School-Materials/MPI/exercises/recursive_par.cc
+-'  46  1  ~/Summer-School-Materials/MPI/exercises/recursive_seq.cc
+-'  57  0  ~/Summer-School-Materials/MPI/exercises/recursive_seq.cc
+-'  1  0  ~/Summer-School-Materials/MPI/exercises/recursive_seq.cc
+-'  44  2  ~/Summer-School-Materials/MPI/exercises/pi_seq.cc
+-'  42  2  ~/Summer-School-Materials/MPI/exercises/pi_seq.cc
+-'  111  0  ~/Summer-School-Materials/Examples/Hartree-Fock/mpi/scf.cc
+-'  731  0  ~/Summer-School-Materials/Examples/Hartree-Fock/mpi/scf.cc
+-'  1  0  ~/Summer-School-Materials/Examples/Hartree-Fock/mpi/scf.cc
+-'  1  0  ~/Summer-School-Materials/Examples/Hartree-Fock/mpi/Makefile
+-'  49  0  ~/Summer-School-Materials/Examples/Hartree-Fock/mpi/README.md
+-'  1  0  ~/Summer-School-Materials/Examples/Hartree-Fock/mpi/README.md
+-'  30  4  ~/Summer-School-Materials/MPI/exercises/pi_seq.cc
+-'  13  0  ~/Summer-School-Materials/MPI/exercises/pi_seq.cc
+-'  25  2  ~/Summer-School-Materials/MPI/exercises/pi_seq.cc
+-'  47  0  ~/Summer-School-Materials/MPI/exercises/pi_seq.cc
+-'  20  0  ~/Summer-School-Materials/MPI/exercises/pi_seq.cc
+-'  27  2  ~/Summer-School-Materials/MPI/exercises/pi_seq.cc
+-'  13  4  ~/Summer-School-Materials/MPI/exercises/ex1.cc
+-'  28  2  ~/Summer-School-Materials/MPI/exercises/pi_seq.cc
+-'  26  0  ~/Summer-School-Materials/MPI/exercises/pi_seq.cc
+-'  18  0  ~/Summer-School-Materials/MPI/exercises/exercise2.cc
+-'  1  0  ~/Summer-School-Materials/MPI/exercises/pi_seq.cc
+-'  26  0  ~/Summer-School-Materials/MPI/exercises/exercise2.cc
+-'  11  0  ~/Summer-School-Materials/MPI/exercises/exercise2.cc
+-'  1  0  ~/Summer-School-Materials/MPI/exercises/exercise2.cc
+-'  28  0  ~/Summer-School-Materials/MPI/exercises/ex1.cc
+-'  25  0  ~/Summer-School-Materials/MPI/exercises/ex1.cc
+-'  1  0  ~/Summer-School-Materials/MPI/exercises/exchange1.cc
+-'  20  4  ~/Summer-School-Materials/MPI/exercises/ex1.cc
+-'  21  5  ~/Summer-School-Materials/MPI/exercises/ex1.cc
+-'  19  4  ~/Summer-School-Materials/MPI/exercises/ex1.cc
+-'  27  0  ~/Summer-School-Materials/MPI/exercises/ex1.cc
+-'  8  5  ~/Summer-School-Materials/MPI/exercises/ex1.cc
+-'  1  0  ~/Summer-School-Materials/MPI/exercises/ex1.cc
+-'  2  103  ~/Summer-School-Materials/MPI/exercises/mpihello.sbatch
+-'  8  0  ~/Summer-School-Materials/OpenMP/example4/run.sh
+-'  1  0  ~/Summer-School-Materials/MPI/exercises/mpihello.sbatch
+-'  3  13  ~/Summer-School-Materials/MPI/exercises/mpihello.pbs
+-'  1  0  ~/Summer-School-Materials/MPI/exercises/mpihello.pbs
+-'  1  0  ~/Summer-School-Materials/MPI/exercises/mpihello1
+-'  74  12  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  100  12  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  85  2  ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+-'  4  0  ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/CompileAll.sh
 
 # History of marks within files (newest to oldest):
 
-> ~/OpenMP/example2/example2.cpp
-	"	59	0
-	^	26	25
-	.	26	24
-	+	9	0
-	+	11	37
-	+	57	2
-	+	18	1
-	+	17	27
-	+	24	16
-	+	25	2
-	+	21	64
-	+	17	11
-	+	25	2
-	+	26	1
-	+	25	26
-	+	33	33
-	+	43	32
-	+	58	1
-	+	29	18
-	+	41	27
-	+	49	24
-	+	58	0
-	+	58	21
-	+	58	21
-	+	58	35
-	+	58	39
-	+	58	45
-	+	58	0
-	+	33	1
-	+	41	1
-	+	34	0
-	+	34	0
-	+	34	30
-	+	34	0
-	+	34	0
-	+	34	0
-	+	34	32
-	+	41	22
-	+	34	10
-	+	34	0
-	+	40	0
-	+	41	0
-	+	41	0
-	+	37	14
-	+	37	0
-	+	35	24
-	+	40	0
-	+	37	10
-	+	45	0
-	+	46	23
-	+	18	23
-	+	24	24
-	+	37	0
-	+	24	0
-	+	26	24
+> ~/Summer-School-Materials/OpenMPOffload/Makefile
+	"	6	1
 
-> ~/OpenMP/example2/output
-	"	2	0
-
-> ~/OpenMP/example2/run.sh
+> ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
 	"	1	0
+	^	108	46
+	.	108	45
+	+	100	15
+	+	108	45
 
-> ~/OpenMP/example2/example2
-	"	1	0
+> ~/Wednesday-morning/TutorialsCUDA/program_iiia_solved.cu
+	"	74	12
 
-> ~/OpenMP/example1/Makefile
+> ~/Wednesday-morning/TutorialsCUDA/program_iiia.cu
+	"	88	0
+	^	88	0
+	.	87	2
+	+	73	0
+	+	74	9
+	+	84	9
+	+	87	2
+
+> ~/Summer-School-Materials/Wednesday-morning/TutorialsCUDA/CompileAll.sh
 	"	4	0
-	^	3	23
-	.	3	11
-	+	2	0
-	+	4	1
-	+	4	0
-	+	3	11
 
-> ~/OpenMP/example1/example1.cpp
-	"	22	0
-	^	22	1
-	.	22	0
-	+	7	20
-	+	8	0
-	+	12	0
-	+	3	0
-	+	9	39
-	+	11	40
-	+	15	0
-	+	14	24
-	+	22	0
-
-> ~/OpenMP/example1/example1
+> ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iiia.cu
 	"	1	0
 
-> ~/OpenMP/example1/output
+> ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iie.cu
+	"	89	12
+
+> ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iid.cu
+	"	336	0
+
+> ~/CUDA/Wednesday-morning/TutorialsCUDA/program_iic.cu
+	"	315	0
+
+> ~/CUDA/Wednesday-morning/TutorialsCUDA/program_id.cu
 	"	1	0
 
-> ~/OpenMP/example1/sbatch.out
+> ~/CUDA/Wednesday-morning/TutorialsCUDA/program_ic.cu
+	"	27	0
+
+> ~/CUDA/Wednesday-morning/TutorialsCUDA/program_ia.cu
+	"	32	0
+
+> ~/CUDA/Wednesday-morning/TutorialsCUDA/program_ia
 	"	1	0
 
-> ~/OpenMP/example1/run.sh
-	"	12	21
-	^	12	22
-	.	12	22
-	+	12	22
+> ~/CUDA/Wednesday-morning/TutorialsCUDA/CompileAll.sh
+	"	8	0
 
-> ~/Summer-School-Materials/Examples/vmc/vec/ipo_out.optrpt
-	"	1	0
+> ~/Summer-School-Materials/MPI/exercises/recursive_par.cc
+	"	56	28
+	^	54	22
+	.	56	28
+	+	48	0
+	+	51	10
+	+	50	20
+	+	55	1
+	+	54	39
+	+	58	45
+	+	60	41
+	+	61	22
+	+	32	2
+	+	33	3
+	+	57	2
+	+	54	3
+	+	56	28
 
-> ~/Summer-School-Materials/Examples/vmc/vec/vmc.cc
-	"	10	0
-
-> ~/Summer-School-Materials/Examples/Vectorization/mc/ipo_out.optrpt
-	"	16	3
-
-> ~/Summer-School-Materials/Examples/Vectorization/mc/mc2.optrpt
-	"	7	0
-
-> ~/Summer-School-Materials/Examples/Vectorization/mc/Makefile
-	"	19	1
-	.	13	0
+> ~/Summer-School-Materials/MPI/exercises/recursive_seq.cc
+	"	46	1
+	^	46	2
+	.	46	1
+	+	4	16
+	+	12	35
 	+	13	0
+	+	46	1
 
-> ~/Summer-School-Materials/Examples/Vectorization/mc/exptest.cc
-	"	56	0
+> ~/Summer-School-Materials/MPI/exercises/pi_seq.cc
+	"	44	2
+	^	42	22
+	.	42	21
+	+	28	0
+	+	28	92
+	+	28	17
+	+	6	0
+	+	4	16
+	+	14	21
+	+	43	14
+	+	14	1
+	+	27	1
+	+	24	94
+	+	24	1
+	+	25	47
+	+	27	0
+	+	21	2
+	+	19	0
+	+	22	28
+	+	23	1
+	+	24	2
+	+	47	0
+	+	25	29
+	+	28	0
+	+	13	30
+	+	36	17
+	+	40	18
+	+	44	1
+	+	43	0
+	+	29	30
+	+	38	67
+	+	42	21
 
-> ~/Summer-School-Materials/Examples/Vectorization/mc/README.md
-	"	72	0
+> ~/Summer-School-Materials/Examples/Hartree-Fock/mpi/scf.cc
+	"	111	0
 
-> ~/Summer-School-Materials/Examples/Vectorization/mc/mc2.cc
-	"	57	0
-
-> ~/Summer-School-Materials/Examples/Vectorization/mc/mc1.optrpt
+> ~/Summer-School-Materials/Examples/Hartree-Fock/mpi/Makefile
 	"	1	0
 
-> ~/Summer-School-Materials/Examples/Vectorization/mc/mc0.optrpt
-	"	1	0
+> ~/Summer-School-Materials/Examples/Hartree-Fock/mpi/README.md
+	"	49	0
